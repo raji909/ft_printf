@@ -25,7 +25,6 @@ int	ft_putaddress(void *p)
 	ft_strcpy(hexa, "0123456789abcdef");
 	add = (size_t)p;
 	ft_putstr("0x");
-	count = 2;
-	count += ft_printadd(add, hexa);
+	count = ft_printadd(add, hexa);
 	return (count);
 }
