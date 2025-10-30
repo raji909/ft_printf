@@ -59,7 +59,7 @@ int main(void)
             int save = dup(1);          // حفظ stdout الأصلي
             dup2(fd, 1);                // توجيه الإخراج إلى الملف
             printf("std  %%d %%u %%c %%s %%s %%s %%p %%x %%X: |%d|%u|%c|%s|%s|%s|%p|%x|%X|\n", di, u, c, s1, s2, s3, p, x, X);
-            printf("ft   %%d %%u %%c %%s %%s %%s %%p %%x %%X: |%d|%u|%c|%s|%s|%s|%p|%x|%X|\n", di, u, c, s1, s2, s3, p, x, X);
+            ft_printf("ft   %%d %%u %%c %%s %%s %%s %%p %%x %%X: |%d|%u|%c|%s|%s|%s|%p|%x|%X|\n", di, u, c, s1, s2, s3, p, x, X);
             printf("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! RET MISMATCH at iteration %d !!!\n", i);
             printf("ft:%d\nstd:%d\n", ret_ft, ret_std);
 
