@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/31 01:09:51 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 16:56:16 by adraji           ###   ########.fr       */
+/*   Created: 2025/10/19 21:18:15 by adraji            #+#    #+#             */
+/*   Updated: 2025/10/19 21:18:17 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "libft.h"
 
-int	ft_putchar(char c)
+int	ft_lstsize(t_list *lst)
 {
-	write (1, &c, 1);
-	return (1);
+	size_t	size;
+	t_list	*tmp;
+
+	size = 0;
+	tmp = lst;
+	while (tmp)
+	{
+		tmp = tmp->next;
+		size++;
+	}
+	return (size);
 }

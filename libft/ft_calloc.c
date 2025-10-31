@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/31 01:09:51 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 16:56:16 by adraji           ###   ########.fr       */
+/*   Created: 2025/10/16 15:50:54 by adraji            #+#    #+#             */
+/*   Updated: 2025/10/16 15:57:55 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "libft.h"
 
-int	ft_putchar(char c)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	write (1, &c, 1);
-	return (1);
+	void	*p;
+
+	if (size && nmemb > (SIZE_MAX / size))
+		return (NULL);
+	p = malloc(nmemb * size);
+	if (!p)
+		return (NULL);
+	ft_bzero(p, nmemb * size);
+	return (p);
 }

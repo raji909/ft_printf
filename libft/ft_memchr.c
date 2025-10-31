@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/31 01:09:51 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 16:56:16 by adraji           ###   ########.fr       */
+/*   Created: 2025/10/15 10:59:44 by adraji            #+#    #+#             */
+/*   Updated: 2025/10/15 16:21:54 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "libft.h"
 
-int	ft_putchar(char c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	write (1, &c, 1);
-	return (1);
+	size_t				i;
+	const unsigned char	*str;
+	unsigned char		ch;
+
+	i = 0;
+	str = (const unsigned char *)s;
+	ch = (unsigned char)c;
+	while (i < n)
+	{
+		if (ch == str[i])
+			return ((void *)&str[i]);
+		i++;
+	}
+	return (NULL);
 }

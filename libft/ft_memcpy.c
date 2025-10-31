@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
+/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/31 01:10:01 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 16:56:18 by adraji           ###   ########.fr       */
+/*   Created: 2025/10/15 10:51:21 by adraji            #+#    #+#             */
+/*   Updated: 2025/10/15 10:51:24 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "libft.h"
 
-int	ft_putstr(char *s)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int	count;
+	size_t				i;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-	count = 0;
-	if (!s)
+	if (!dest && !src)
+		return (NULL);
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
 	{
-		write(1, "(null)", 6);
-		return (6);
+		d[i] = s[i];
+		i++;
 	}
-	while (s[count])
-		ft_putchar(s[count++]);
-	free(s);
-	return (count);
+	return (dest);
 }
