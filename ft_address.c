@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft/libft.h"
+#include "libft.h"
 
 static int	ft_addresslen(size_t n)
 {
