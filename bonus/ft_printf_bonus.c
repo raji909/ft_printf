@@ -6,14 +6,14 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 01:09:24 by adraji            #+#    #+#             */
-/*   Updated: 2025/11/01 13:22:26 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 13:41:05 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
 
-int ft_printf_bonus(va_list args, const char *fms)
+int	ft_printf_bonus(va_list args, const char *fms)
 {
 	int		count;
 

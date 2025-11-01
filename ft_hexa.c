@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 01:09:54 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 20:59:38 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 13:38:07 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,3 @@ char	*ft_hexa(unsigned int n, char x)
 		ft_fillhexa(hexa, n, "0123456789abcdef");
 	return (hexa);
 }
-

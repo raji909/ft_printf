@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 01:09:40 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 21:03:12 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 13:38:32 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ int	ft_printf(const char *fms, ...)
 	{
 		if (fms[i] != '%')
 			count += ft_putchar(fms[i]);
-		else if (fms[i + 1] == ' ' || fms[i + 1] == '.' ||
-			fms[i + 1] == '-' || fms[i + 1] == '#' || ft_isdigit(fms[i + 1]))
+		else if (fms[i + 1] == ' ' || fms[i + 1] == '.'
+			|| fms[i + 1] == '-' || fms[i + 1] == '#' || ft_isdigit(fms[i + 1]))
 			count += ft_printf_bonus(args, &fms[i + 1]);
 		else if (fms[i + 1])
 			count += ft_switch(args, fms[++i]);

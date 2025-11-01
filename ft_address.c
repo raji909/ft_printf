@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 01:09:48 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 16:55:57 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 13:37:48 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 static int	ft_addresslen(size_t n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	while (n > 0)
@@ -28,8 +28,8 @@ static int	ft_addresslen(size_t n)
 
 char	*ft_address(void *p)
 {
-	int 	i;
-	int 	len;
+	int		i;
+	int		len;
 	char	*add;
 	size_t	address;
 

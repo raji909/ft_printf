@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 20:34:54 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 12:30:44 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 13:41:32 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 static size_t	ft_sizenb(int n)
 {
-	size_t	size;
+	size_t			size;
 	unsigned int	nb;
 
 	size = 0;
 	if (n <= 0)
 	{
-		size++;        // للمسافة الخاصة بـ '-' أو '0'
+		size++;
 		nb = - (unsigned int)n;
 	}
 	else

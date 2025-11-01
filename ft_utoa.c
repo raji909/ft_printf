@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 20:34:54 by adraji            #+#    #+#             */
-/*   Updated: 2025/10/31 17:15:01 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 13:39:53 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,6 @@ static void	ft_revers(char *s)
 	}
 }
 
-// adraji
-
 char	*ft_utoa(unsigned int n)
 {
 	char	*nb;
@@ -66,4 +64,3 @@ char	*ft_utoa(unsigned int n)
 	ft_revers(nb);
 	return (nb);
 }
-

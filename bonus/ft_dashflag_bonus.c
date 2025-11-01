@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 21:07:52 by adraji            #+#    #+#             */
-/*   Updated: 2025/11/01 13:24:32 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 13:40:42 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static char	*ft_dash_switch(va_list args, const char fms)
 	return (NULL);
 }
 
-int	ft_dashflag(va_list args, const char *fms,  int size)
+int	ft_dashflag(va_list args, const char *fms, int size)
 {
 	int		i;
 	int		count;
