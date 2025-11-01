@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 21:58:07 by adraji            #+#    #+#             */
-/*   Updated: 2025/11/01 13:25:01 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 16:48:26 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static char	*ft_dote_switch(va_list args, const char fms)
 	else if (fms == 'u')
 		return (ft_utoa(va_arg(args, unsigned int)));
 	else if (fms == 's')
-		return (ft_address(va_arg(args, void *)));
+		return (ft_strdup(va_arg(args, char *)));
 	else if (fms == 'x' || fms == 'X')
 		return (ft_hexa(va_arg(args, unsigned int), fms));
 	return (NULL);

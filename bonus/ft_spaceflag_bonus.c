@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 10:37:33 by adraji            #+#    #+#             */
-/*   Updated: 2025/11/01 13:25:26 by adraji           ###   ########.fr       */
+/*   Updated: 2025/11/01 15:58:56 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ static char	*ft_spase_switch(char *num, char const fms, int size)
 {
 	int		len;
 	char	*space;
+	char	*result;
 
 	if (fms == 'd' || fms == 'i')
 	{
@@ -31,7 +32,9 @@ static char	*ft_spase_switch(char *num, char const fms, int size)
 		}
 		ft_memset(space, ' ', len);
 		space[len] = '\0';
-		return (ft_strjoin(space, num));
+		result = ft_strjoin(space, num);
+		free(space);
+		return (result);
 	}
 	return (NULL);
 }
